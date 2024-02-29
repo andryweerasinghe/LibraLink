@@ -9,12 +9,14 @@ package lk.ijse.libraLink.entity;
 
 public class User {
     private int id;
+    private int branch_id;
     private String name;
     private String email;
     private String password;
 
-    public User(int id, String name, String email, String password) {
+    public User(int id, int branch_id, String name, String email, String password) {
         this.id = id;
+        this.branch_id = branch_id;
         this.name = name;
         this.email = email;
         this.password = password;
@@ -29,6 +31,14 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getBranch_id() {
+        return branch_id;
+    }
+
+    public void setBranch_id(int branch_id) {
+        this.branch_id = branch_id;
     }
 
     public String getName() {
