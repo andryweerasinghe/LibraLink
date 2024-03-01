@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8504dac5-f021-4d2a-9e59-ab14102a7790" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/config/FactoryConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/registration_form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8504dac5-f021-4d2a-9e59-ab14102a7790" name="Changes" comment="registration_form.fxml and controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/CrudDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/SuperDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,6 +57,11 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -80,10 +83,25 @@
       <workItem from="1709051050742" duration="5000" />
       <workItem from="1709113835327" duration="1286000" />
       <workItem from="1709224372706" duration="688000" />
+      <workItem from="1709226776197" duration="1646000" />
+      <workItem from="1709283362384" duration="4048000" />
     </task>
+    <task id="LOCAL-00001" summary="registration_form.fxml and controller">
+      <option name="closed" value="true" />
+      <created>1709228238075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709228238075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="registration_form.fxml and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="registration_form.fxml and controller" />
   </component>
 </project>
