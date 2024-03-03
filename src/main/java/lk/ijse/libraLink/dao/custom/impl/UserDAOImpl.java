@@ -13,7 +13,6 @@ import lk.ijse.libraLink.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserDAOImpl implements UserDAO{
@@ -28,7 +27,7 @@ public class UserDAOImpl implements UserDAO{
     public String generateNewId() throws SQLException, ClassNotFoundException {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
-        int id = session.createNativeQuery("SELECT id FROM User ORDER BY id DESC LIMIT 1");
+        session.createNativeQuery("SELECT id FROM User ORDER BY id DESC LIMIT 1", User.class).executeUpdate();
         if (resultSet.next()){
             String id = resultSet.getString("id");
             int newCustomerId = Integer.parseInt(id.replace("C00-", "")) + 1;
@@ -37,5 +36,12 @@ public class UserDAOImpl implements UserDAO{
             return "C00-001";
         }
     }
-
+    public boolean isValidUser(User entity){
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        session.createNativeQuery("SELECT * FROM User WHERE password='" + entity.getPassword() + "' AND name='" + entity.getName() + "'", User.class).executeUpdate();
+        transaction.commit();
+        session.close();
+        return false;
+    }
 }

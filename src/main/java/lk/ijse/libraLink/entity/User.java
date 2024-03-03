@@ -14,6 +14,11 @@ public class User {
     private String email;
     private String password;
 
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
     public User(int id, int branch_id, String name, String email, String password) {
         this.id = id;
         this.branch_id = branch_id;

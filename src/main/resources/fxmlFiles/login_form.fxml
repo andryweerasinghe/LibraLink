@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" styleClass="root" stylesheets="@../styles/registrationStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraLink.controller.LoginFormController">
+   <children>
+      <TextField fx:id="txtName" layoutX="718.0" layoutY="244.0" promptText="Enter your name" />
+      <TextField fx:id="txtPw" layoutX="718.0" layoutY="294.0" promptText="Enter the password" />
+      <JFXButton layoutX="728.0" layoutY="364.0" onAction="#btnLoginOnAction" text="Login" />
+      <Label layoutX="762.0" layoutY="135.0" prefHeight="37.0" prefWidth="84.0" text="Login">
+         <font>
+            <Font name="DejaVu Sans Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="822.0" layoutY="364.0" onAction="#btnRegisterOnAction" text="Register" />
+   </children>
+</AnchorPane>
