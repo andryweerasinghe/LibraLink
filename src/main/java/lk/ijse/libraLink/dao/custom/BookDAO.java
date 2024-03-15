@@ -13,4 +13,6 @@ public interface BookDAO {
     boolean update(Book entity);
     boolean delete(int bookId);
     List<Book> getAll();
+    Book searchById(Book entity);
+    Book searchByTitle(Book entity);
 }

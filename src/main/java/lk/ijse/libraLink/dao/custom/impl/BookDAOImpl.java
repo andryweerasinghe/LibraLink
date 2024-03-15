@@ -7,12 +7,16 @@
 
 package lk.ijse.libraLink.dao.custom.impl;
 
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
 import lk.ijse.libraLink.config.FactoryConfiguration;
 import lk.ijse.libraLink.dao.custom.BookDAO;
 import lk.ijse.libraLink.entity.Book;
 import lk.ijse.libraLink.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.criteria.HibernateCriteriaBuilder;
 
 import java.util.List;
 
@@ -49,11 +53,31 @@ public class BookDAOImpl implements BookDAO {
         session.close();
         return list;
     }
-    public Book search(Book entity){
+    public Book searchById(Book entity){
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         Book book = session.find(Book.class, entity.getId());
         session.getTransaction().commit();
         return book;
+    }
+    public Book searchByTitle(Book entity){
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        Book book = session.find(Book.class, entity.getTitle());
+        session.getTransaction().commit();;
+        return book;
+    }
+    public List<Book> searchByAuthor(Book entity){
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        HibernateCriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+        CriteriaQuery<Book> criteriaQuery = criteriaBuilder.createQuery(Book.class);
+        Root<Book> root = criteriaQuery.from(Book.class);
+        criteriaQuery.select(root);
+        Predicate predicate = criteriaBuilder.like(root.get("title"), "%" + entity.getAuthor() + "%");
+        criteriaQuery.where(predicate);
+        List<Book> books = session.createQuery(criteriaQuery).getResultList();
+        session.getTransaction().commit();
+        return books;
     }
 }

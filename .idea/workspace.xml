@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8504dac5-f021-4d2a-9e59-ab14102a7790" name="Changes" comment="bo packaging">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/BookBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/AddBookFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/BookBorrowingFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/BookManagingFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/UpdateBookFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/BookDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/TransactionDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/BookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/BranchDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/TransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/add_book_form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/book_borrowing_form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/book_managing_form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/update_book_form.fxml" afterDir="false" />
+    <list default="true" id="8504dac5-f021-4d2a-9e59-ab14102a7790" name="Changes" comment="done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/CrudDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/CrudDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/BookDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/BookDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +90,7 @@
       <workItem from="1710341574708" duration="3794000" />
       <workItem from="1710432073017" duration="114000" />
       <workItem from="1710432228383" duration="2218000" />
+      <workItem from="1710517946520" duration="3146000" />
     </task>
     <task id="LOCAL-00001" summary="registration_form.fxml and controller">
       <option name="closed" value="true" />
@@ -136,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709550930340</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="done">
+      <option name="closed" value="true" />
+      <created>1710518136775</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710518136775</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +143,7 @@
     <MESSAGE value="DAOFactory, UserDAOImpl and UserDTO" />
     <MESSAGE value="login_form.fxml &amp; LoginFormController" />
     <MESSAGE value="bo packaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="bo packaging" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
