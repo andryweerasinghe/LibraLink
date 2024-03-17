@@ -8,11 +8,11 @@
 package lk.ijse.libraLink.dto;
 
 public class BranchDTO {
-    private int id;
+    private String id;
     private String name;
     private String status;
 
-    public BranchDTO(int id, String name, String status) {
+    public BranchDTO(String id, String name, String status) {
         this.id = id;
         this.name = name;
         this.status = status;
@@ -21,11 +21,11 @@ public class BranchDTO {
     public BranchDTO() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

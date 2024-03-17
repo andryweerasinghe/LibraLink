@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 public interface UserDAO extends CrudDAO {
     boolean save(User entity);
-    String generateNewId() throws SQLException, ClassNotFoundException;
+    String generateNewId();
     boolean isValidUser(User entity);
+    String getUserId(String name);
 }

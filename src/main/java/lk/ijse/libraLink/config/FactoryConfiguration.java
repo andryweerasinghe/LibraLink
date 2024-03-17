@@ -9,7 +9,7 @@ package lk.ijse.libraLink.config;
 
 import lk.ijse.libraLink.entity.Book;
 import lk.ijse.libraLink.entity.Branch;
-import lk.ijse.libraLink.entity.Transaction;
+import lk.ijse.libraLink.entity.Transactions;
 import lk.ijse.libraLink.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -21,7 +21,7 @@ public class FactoryConfiguration {
 
     private FactoryConfiguration(){
         Configuration configuration = new Configuration().configure().addAnnotatedClass(User.class)
-                .addAnnotatedClass(Book.class).addAnnotatedClass(Branch.class).addAnnotatedClass(Transaction.class);
+                .addAnnotatedClass(Book.class).addAnnotatedClass(Branch.class).addAnnotatedClass(Transactions.class);
         sessionFactory = configuration.buildSessionFactory();
     }
     public static FactoryConfiguration getInstance(){

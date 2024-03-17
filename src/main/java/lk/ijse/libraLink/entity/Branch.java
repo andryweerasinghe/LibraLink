@@ -8,11 +8,11 @@
 package lk.ijse.libraLink.entity;
 
 public class Branch {
-    private int id;
+    private String id;
     private String name;
     private String status;
 
-    public Branch(int id, String name, String status) {
+    public Branch(String id, String name, String status) {
         this.id = id;
         this.name = name;
         this.status = status;
@@ -21,11 +21,11 @@ public class Branch {
     public Branch() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -7,14 +7,22 @@
 
 package lk.ijse.libraLink.entity;
 
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+import java.util.List;
+
 public class Book {
-    private int id;
+    @Id
+    private String id;
     private String title;
     private String author;
     private String genre;
     private String availability;
 
-    public Book(int id, String title, String author, String genre, String availability) {
+    @OneToMany(mappedBy = "books") private List<Transactions> transactions;
+
+    public Book(String id, String title, String author, String genre, String availability) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -22,14 +30,24 @@ public class Book {
         this.availability = availability;
     }
 
+    public Book(String title, String author, String genre) {
+        this.title = title;
+        this.author = author;
+        this.genre = genre;
+    }
+
+    public Book(String id) {
+        this.id = id;
+    }
+
     public Book() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

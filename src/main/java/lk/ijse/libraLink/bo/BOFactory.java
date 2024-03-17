@@ -7,7 +7,10 @@
 
 package lk.ijse.libraLink.bo;
 
+import lk.ijse.libraLink.bo.custom.impl.BookBOImpl;
+import lk.ijse.libraLink.bo.custom.impl.BorrowBookBOImpl;
 import lk.ijse.libraLink.bo.custom.impl.UserBOImpl;
+import lk.ijse.libraLink.dao.custom.impl.BookDAOImpl;
 
 public class BOFactory {
     private static BOFactory boFactory;
@@ -18,7 +21,7 @@ public class BOFactory {
     }
 
     public enum BOTypes{
-        USER,ITEM,PO
+        USER,BOOK,BORROW
     }
 
     //Object creation logic for BO objects
@@ -26,6 +29,10 @@ public class BOFactory {
         switch (types){
             case USER:
                 return new UserBOImpl();
+            case BOOK:
+                return new BookBOImpl();
+            case BORROW:
+                return new BorrowBookBOImpl();
             default:
                 return null;
         }

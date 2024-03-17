@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -19,5 +20,8 @@
         </columns>
       </TableView>
       <JFXButton layoutX="712.0" layoutY="72.0" onAction="#btnSearchOnAction" text="Search" />
+      <JFXRadioButton fx:id="radioBtnId" layoutX="226.0" layoutY="37.0" text="Search by ID" />
+      <JFXRadioButton fx:id="radioBtnTitle" layoutX="355.0" layoutY="37.0" text="Search by Title" />
+      <JFXRadioButton fx:id="radioBtnAuthor" layoutX="500.0" layoutY="37.0" text="Search by Author" />
    </children>
 </AnchorPane>

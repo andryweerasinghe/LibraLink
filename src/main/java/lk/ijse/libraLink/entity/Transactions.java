@@ -1,20 +1,39 @@
 /*
  * Author  : Mr.electrix
  * Project : LibraLink
- * Date    : 3/13/24
+ * Date    : 2/28/24
 
  */
 
-package lk.ijse.libraLink.dto;
+package lk.ijse.libraLink.entity;
 
-public class TransactionDTO {
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+public class Transactions {
+    @Id
     private String id;
     private String userId;
     private String bookId;
     private String borrowedDate;
+    private String returnedDate;
     private String dueDate;
 
-    public TransactionDTO(String id, String userId, String bookId, String borrowedDate, String dueDate) {
+    @ManyToOne
+    @JoinColumn(name = "bookId")
+    private Book books;
+
+    public Transactions(String id, String userId, String bookId, String borrowedDate, String returnedDate, String dueDate) {
+        this.id = id;
+        this.userId = userId;
+        this.bookId = bookId;
+        this.borrowedDate = borrowedDate;
+        this.returnedDate = returnedDate;
+        this.dueDate = dueDate;
+    }
+
+    public Transactions(String id, String userId, String bookId, String borrowedDate, String dueDate) {
         this.id = id;
         this.userId = userId;
         this.bookId = bookId;
@@ -22,7 +41,7 @@ public class TransactionDTO {
         this.dueDate = dueDate;
     }
 
-    public TransactionDTO() {
+    public Transactions() {
     }
 
     public String getId() {
@@ -57,6 +76,14 @@ public class TransactionDTO {
         this.borrowedDate = borrowedDate;
     }
 
+    public String getReturnedDate() {
+        return returnedDate;
+    }
+
+    public void setReturnedDate(String returnedDate) {
+        this.returnedDate = returnedDate;
+    }
+
     public String getDueDate() {
         return dueDate;
     }
@@ -67,11 +94,12 @@ public class TransactionDTO {
 
     @Override
     public String toString() {
-        return "TransactionDTO{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", bookId=" + bookId +
+        return "Transaction{" +
+                "id='" + id + '\'' +
+                ", userId='" + userId + '\'' +
+                ", bookId='" + bookId + '\'' +
                 ", borrowedDate='" + borrowedDate + '\'' +
+                ", returnedDate='" + returnedDate + '\'' +
                 ", dueDate='" + dueDate + '\'' +
                 '}';
     }

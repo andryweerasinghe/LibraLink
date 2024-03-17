@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraLink.controller.BookManagingFormController">
+<AnchorPane fx:id="rootNode" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraLink.controller.BookManagingFormController">
    <children>
-      <TableView layoutX="115.0" layoutY="192.0" prefHeight="383.0" prefWidth="770.0">
+      <TableView fx:id="tblBooks" layoutX="115.0" layoutY="192.0" prefHeight="383.0" prefWidth="770.0">
         <columns>
           <TableColumn fx:id="columnId" prefWidth="95.0" text="Book ID" />
           <TableColumn fx:id="columnTitle" prefWidth="164.0" text="Title" />
@@ -21,5 +21,8 @@
       <TextField fx:id="txtBookSearch" layoutX="229.0" layoutY="80.0" prefHeight="34.0" prefWidth="465.0" />
       <JFXButton layoutX="708.0" layoutY="85.0" onAction="#btnSearchOnAction" text="Search" />
       <JFXButton layoutX="405.0" layoutY="138.0" onAction="#btnAddBookOnAction" text="Add New Book" />
+      <JFXRadioButton fx:id="radiobtnId" layoutX="248.0" layoutY="41.0" text="Search by ID" />
+      <JFXRadioButton fx:id="radioBtnTitle" layoutX="388.0" layoutY="41.0" text="Search by Title" />
+      <JFXRadioButton fx:id="radioBtnAuthor" layoutX="533.0" layoutY="41.0" text="Search by Author" />
    </children>
 </AnchorPane>

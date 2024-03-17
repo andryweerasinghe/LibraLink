@@ -60,6 +60,11 @@
             <version>22.0.0</version>
             <scope>compile</scope>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>1.18.26</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -83,7 +88,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.layeredarchitecture/com.example.layeredarchitecture.HelloApplication
+                                lk.ijse.libraLink/lk.ijse.libraLink.Launcher
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

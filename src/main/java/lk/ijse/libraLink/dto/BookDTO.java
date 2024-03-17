@@ -8,13 +8,13 @@
 package lk.ijse.libraLink.dto;
 
 public class BookDTO {
-    private int id;
+    private String id;
     private String title;
     private String author;
     private String genre;
     private String availability;
 
-    public BookDTO(int id, String title, String author, String genre, String availability) {
+    public BookDTO(String id, String title, String author, String genre, String availability) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -22,14 +22,24 @@ public class BookDTO {
         this.availability = availability;
     }
 
+    public BookDTO(String title, String author, String genre) {
+        this.title = title;
+        this.author = author;
+        this.genre = genre;
+    }
+
+    public BookDTO(String id) {
+        this.id = id;
+    }
+
     public BookDTO() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

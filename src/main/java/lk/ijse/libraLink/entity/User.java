@@ -7,9 +7,12 @@
 
 package lk.ijse.libraLink.entity;
 
+import jakarta.persistence.Id;
+
 public class User {
-    private int id;
-    private int branch_id;
+    @Id
+    private String id;
+    private String branch_id;
     private String name;
     private String email;
     private String password;
@@ -19,7 +22,7 @@ public class User {
         this.password = password;
     }
 
-    public User(int id, int branch_id, String name, String email, String password) {
+    public User(String id, String branch_id, String name, String email, String password) {
         this.id = id;
         this.branch_id = branch_id;
         this.name = name;
@@ -30,19 +33,19 @@ public class User {
     public User() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getBranch_id() {
+    public String getBranch_id() {
         return branch_id;
     }
 
-    public void setBranch_id(int branch_id) {
+    public void setBranch_id(String branch_id) {
         this.branch_id = branch_id;
     }
 

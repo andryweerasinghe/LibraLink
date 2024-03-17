@@ -8,13 +8,13 @@
 package lk.ijse.libraLink.dto;
 
 public class UserDTO {
-    private int id;
-    private int branch_id;
+    private String id;
+    private String branch_id;
     private String name;
     private String email;
     private String password;
 
-    public UserDTO(int id, int branch_id, String name, String email, String password) {
+    public UserDTO(String id, String branch_id, String name, String email, String password) {
         this.id = id;
         this.branch_id = branch_id;
         this.name = name;
@@ -22,22 +22,27 @@ public class UserDTO {
         this.password = password;
     }
 
+    public UserDTO(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
     public UserDTO() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getBranch_id() {
+    public String getBranch_id() {
         return branch_id;
     }
 
-    public void setBranch_id(int branch_id) {
+    public void setBranch_id(String branch_id) {
         this.branch_id = branch_id;
     }
 
