@@ -14,6 +14,8 @@ import org.hibernate.Transaction;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import java.util.List;
+
 public class TransactionDAOImpl implements TransactionDAO {
     public boolean save(Transactions entity){
         Session session = FactoryConfiguration.getInstance().getSession();
@@ -36,5 +38,28 @@ public class TransactionDAOImpl implements TransactionDAO {
         } else {
             return "T00-001";
         }
+    }
+    public List<Transactions> getAll(){
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        List<Transactions> list = session.createNativeQuery("SELECT * FROM Transactions", Transactions.class).list();
+        transaction.commit();
+        session.close();
+        return list;
+    }
+
+    @Override
+    public String getTotalBorrowedBooks() {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        Query<Long> query = session.createQuery("SELECT count(*) FROM Transactions", Long.class);
+        Long count = query.uniqueResult();
+        String overdueCount = String.valueOf(count);
+
+        transaction.commit();
+        session.close();
+
+        return overdueCount;
     }
 }

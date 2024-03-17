@@ -11,9 +11,11 @@ import lk.ijse.libraLink.bo.custom.BorrowBookBO;
 import lk.ijse.libraLink.dao.DAOFactory;
 import lk.ijse.libraLink.dao.custom.BookDAO;
 import lk.ijse.libraLink.dao.custom.TransactionDAO;
+import lk.ijse.libraLink.dao.custom.UserDAO;
 import lk.ijse.libraLink.dao.custom.impl.BookDAOImpl;
 import lk.ijse.libraLink.dao.custom.impl.TransactionDAOImpl;
 import lk.ijse.libraLink.dto.BookDTO;
+import lk.ijse.libraLink.dto.TransactionDTO;
 import lk.ijse.libraLink.entity.Book;
 import lk.ijse.libraLink.entity.Transactions;
 
@@ -23,6 +25,7 @@ import java.util.List;
 public class BorrowBookBOImpl implements BorrowBookBO {
     BookDAO bookDAO = (BookDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.BOOK);
     TransactionDAO transactionDAO = (TransactionDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.TRANSACTION);
+    UserDAO userDAO = (UserDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.USER);
     @Override
     public boolean borrowBook(String transactionId, String userId, String bookId, String borrowedDate, String dueDate){
         boolean updated = bookDAO.updateAvailability(bookId);
@@ -77,5 +80,33 @@ public class BorrowBookBOImpl implements BorrowBookBO {
             bookDTOS.add(bookDTO);
         }
         return bookDTOS;
+    }
+
+    @Override
+    public List<TransactionDTO> getAllTransactions() {
+        List<TransactionDTO> transactions = new ArrayList<>();
+        List<Transactions> list = transactionDAO.getAll();
+        for (Transactions transaction : list) {
+            transactions.add(new TransactionDTO(
+                    transaction.getId(),transaction.getUserId(),transaction.getBookId(),
+                    transaction.getBorrowedDate()
+            ));
+        }
+        return transactions;
+    }
+
+    @Override
+    public String getTotalBorrowedBooks() {
+        return transactionDAO.getTotalBorrowedBooks();
+    }
+
+    @Override
+    public String getTotalMembers() {
+        return userDAO.getTotalUsers();
+    }
+
+    @Override
+    public String getTotalBooks() {
+        return bookDAO.getTotalBooks();
     }
 }

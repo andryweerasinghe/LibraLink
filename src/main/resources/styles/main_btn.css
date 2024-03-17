@@ -1,0 +1,14 @@
+.default_button{
+    -fx-background-radius: 30 0 0 30;
+}
+.select_button {
+    -fx-background-radius: 30 0 0 30;
+    -fx-background-color: rgb(80, 104, 161);
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.button:hover {
+    -fx-background-color: rgb(80, 104, 161);
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}

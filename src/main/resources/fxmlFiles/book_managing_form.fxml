@@ -19,8 +19,9 @@
         </columns>
       </TableView>
       <TextField fx:id="txtBookSearch" layoutX="229.0" layoutY="80.0" prefHeight="34.0" prefWidth="465.0" />
-      <JFXButton layoutX="708.0" layoutY="85.0" onAction="#btnSearchOnAction" text="Search" />
-      <JFXButton layoutX="405.0" layoutY="138.0" onAction="#btnAddBookOnAction" text="Add New Book" />
+      <JFXButton layoutX="708.0" layoutY="85.0" onAction="#btnSearchOnAction" stylesheets="@../styles/btn_hover.css" text="Search" />
+      <JFXButton layoutX="405.0" layoutY="138.0" onAction="#btnAddBookOnAction"
+                 stylesheets="@../styles/btn_hover.css" text="Add New Book" />
       <JFXRadioButton fx:id="radiobtnId" layoutX="248.0" layoutY="41.0" text="Search by ID" />
       <JFXRadioButton fx:id="radioBtnTitle" layoutX="388.0" layoutY="41.0" text="Search by Title" />
       <JFXRadioButton fx:id="radioBtnAuthor" layoutX="533.0" layoutY="41.0" text="Search by Author" />

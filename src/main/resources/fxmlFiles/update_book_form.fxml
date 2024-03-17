@@ -11,7 +11,7 @@
       <Label layoutX="283.0" layoutY="24.0" text="Update Book" />
       <TextField fx:id="txtGenre" layoutX="133.0" layoutY="224.0" prefHeight="29.0" prefWidth="384.0" promptText="Genre" />
       <TextField fx:id="txtAuthor" layoutX="133.0" layoutY="148.0" prefHeight="29.0" prefWidth="384.0" promptText="Author" />
-      <JFXButton layoutX="195.0" layoutY="328.0" onAction="#btnSaveOnAction" text="Save" />
-      <JFXButton layoutX="367.0" layoutY="328.0" onAction="#btnCancelOnAction" text="Cancel" />
+      <JFXButton layoutX="195.0" layoutY="328.0" onAction="#btnSaveOnAction" stylesheets="@../styles/btn_hover.css" text="Save" />
+      <JFXButton layoutX="367.0" layoutY="328.0" onAction="#btnCancelOnAction" stylesheets="@../styles/btn_hover.css" text="Cancel" />
    </children>
 </AnchorPane>

@@ -123,6 +123,7 @@ public class BookBorrowingFormController implements Initializable {
         columnGenre.setCellValueFactory(new PropertyValueFactory<>("genre"));
 
         setColumnAction();
+        tblBooks.setId("my-table");
     }
     public void setColumnAction(){
         columnAction.setCellFactory(param -> new TableCell<>() {

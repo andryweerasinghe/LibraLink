@@ -22,6 +22,13 @@ public class TransactionDTO {
         this.dueDate = dueDate;
     }
 
+    public TransactionDTO(String id, String userId, String bookId, String borrowedDate) {
+        this.id = id;
+        this.userId = userId;
+        this.bookId = bookId;
+        this.borrowedDate = borrowedDate;
+    }
+
     public TransactionDTO() {
     }
 

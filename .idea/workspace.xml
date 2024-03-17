@@ -5,51 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8504dac5-f021-4d2a-9e59-ab14102a7790" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LauncherWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/RegExPatterns/RegExPatterns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/BookBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/BorrowBookBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/BorrowBookBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/BranchDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/TransactionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/BranchDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/tm/BookTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Transactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/DashboardFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/MainFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/OverdueDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/tm/TransactionTM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/dashboard_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/main_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Filing system-amico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Reading book-pana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/books-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/bookshell-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/branches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-add-users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-book-borrowing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-books-100 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-books-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-borrow-book-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-check-lock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-control-panel-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-email-100 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-library-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-search-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-search.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-transaction-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-user (1).gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8-users-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/male-user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/overdue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/border_radius.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/btn_hover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/drop_shadow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/main_btn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/tableView.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/BOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/UserBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/UserBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/BookBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/BookBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/UserBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/UserBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/config/FactoryConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/config/FactoryConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/AddBookFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/AddBookFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/BorrowBookBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/BorrowBookBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/BorrowBookBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/bo/custom/impl/BorrowBookBOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/BookBorrowingFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/BookBorrowingFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/BookManagingFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/BookManagingFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/RegistrationFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/RegistrationFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/UpdateBookFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/controller/UpdateBookFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/DAOFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/BookDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/TransactionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/TransactionDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/BookDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/TransactionDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/TransactionDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dao/custom/impl/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/BookDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/BranchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/BranchDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/TransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Branch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmlFiles/add_book_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/add_book_form.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmlFiles/book_borrowing_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/book_borrowing_form.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmlFiles/book_managing_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/book_managing_form.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmlFiles/login_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/login_form.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmlFiles/registration_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/registration_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmlFiles/update_book_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmlFiles/update_book_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/registrationStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/registrationStyles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +68,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,35 +87,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LauncherWrapper.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/naveenandry/IdeaProjects/LibraLink/src/main/java/lk/ijse/libraLink",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LauncherWrapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/naveenandry/IdeaProjects/LibraLink/src/main/resources/fxmlFiles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/fxmlFiles" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/lk/ijse/libraLink" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/styles" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -143,7 +157,9 @@
       <workItem from="1710517946520" duration="3948000" />
       <workItem from="1710600083663" duration="18832000" />
       <workItem from="1710644530439" duration="4672000" />
-      <workItem from="1710655208248" duration="5372000" />
+      <workItem from="1710655208248" duration="6720000" />
+      <workItem from="1710687394344" duration="3651000" />
+      <workItem from="1710691051117" duration="487000" />
     </task>
     <task id="LOCAL-00001" summary="registration_form.fxml and controller">
       <option name="closed" value="true" />
@@ -193,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710524513814</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="done">
+      <option name="closed" value="true" />
+      <created>1710680664683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710680664683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

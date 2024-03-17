@@ -29,7 +29,7 @@ public class UserDAOImpl implements UserDAO{
     public String generateNewId() {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
-        Query query = session.createNativeQuery("SELECT id FROM User ORDER BY id DESC LIMIT 1", String.class ).setMaxResults(1); //this doenst return a result set. what can i do?
+        Query query = session.createNativeQuery("SELECT id FROM User ORDER BY id DESC LIMIT 1", String.class ).setMaxResults(1);
         String id = (String) query.uniqueResult();
         transaction.commit();
         session.close();
@@ -69,5 +69,20 @@ public class UserDAOImpl implements UserDAO{
             transaction.commit();
             session.close();
         }
+    }
+
+    @Override
+    public String getTotalUsers() {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        Query<Long> query = session.createQuery("SELECT count(*) FROM User", Long.class);
+        Long count = query.uniqueResult();
+        String totalCount = String.valueOf(count);
+
+        transaction.commit();
+        session.close();
+
+        return totalCount;
     }
 }

@@ -10,12 +10,12 @@
    <children>
       <TextField fx:id="txtName" layoutX="718.0" layoutY="244.0" promptText="Enter your name" />
       <TextField fx:id="txtPw" layoutX="718.0" layoutY="294.0" promptText="Enter the password" />
-      <JFXButton layoutX="728.0" layoutY="364.0" onAction="#btnLoginOnAction" text="Login" />
+      <JFXButton layoutX="728.0" layoutY="364.0" onAction="#btnLoginOnAction" stylesheets="@../styles/btn_hover.css" text="Login" />
       <Label layoutX="762.0" layoutY="135.0" prefHeight="37.0" prefWidth="84.0" text="Login">
          <font>
             <Font name="DejaVu Sans Bold" size="27.0" />
          </font>
       </Label>
-      <JFXButton layoutX="822.0" layoutY="364.0" onAction="#btnRegisterOnAction" text="Register" />
+      <JFXButton layoutX="822.0" layoutY="364.0" onAction="#btnRegisterOnAction" stylesheets="@../styles/btn_hover.css" text="Register" />
    </children>
 </AnchorPane>

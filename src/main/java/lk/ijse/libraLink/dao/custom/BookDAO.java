@@ -19,4 +19,5 @@ public interface BookDAO extends CrudDAO {
     Book searchByTitle(String title);
     boolean updateAvailability(String bookId);
     String generateNewId();
+    String getTotalBooks();
 }

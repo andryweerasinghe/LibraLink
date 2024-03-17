@@ -144,6 +144,7 @@ public class BookManagingFormController implements Initializable {
         columnGenre.setCellValueFactory(new PropertyValueFactory<>("genre"));
 
         setColumnAction();
+        tblBooks.setId("my-table");
     }
 
     public void setColumnAction(){

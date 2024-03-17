@@ -107,4 +107,19 @@ public class BookDAOImpl implements BookDAO {
             return "B00-001";
         }
     }
+
+    @Override
+    public String getTotalBooks() {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        Query<Long> query = session.createQuery("SELECT count(*) FROM Book", Long.class);
+        Long count = query.uniqueResult();
+        String totalCount = String.valueOf(count);
+
+        transaction.commit();
+        session.close();
+
+        return totalCount;
+    }
 }

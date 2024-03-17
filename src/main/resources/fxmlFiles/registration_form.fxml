@@ -14,7 +14,7 @@
       <TextField fx:id="txtPw" layoutX="167.0" layoutY="294.0" opacity="0.8" prefHeight="37.0" prefWidth="438.0" promptText="New password" />
       <TextField fx:id="txtConfirmPw" layoutX="167.0" layoutY="361.0" opacity="0.8" prefHeight="37.0" prefWidth="438.0" promptText="Confirm password" />
       <ChoiceBox fx:id="branchChoiceBox" layoutX="167.0" layoutY="448.0" opacity="0.8" prefWidth="150.0" style="-fx-background-color: white;" />
-      <JFXButton fx:id="btnSignUp" layoutX="531.0" layoutY="555.0" onAction="#btnSignUpOnAction" text="SignUp" />
+      <JFXButton fx:id="btnSignUp" layoutX="531.0" layoutY="555.0" onAction="#btnSignUpOnAction" stylesheets="@../styles/btn_hover.css" text="SignUp" />
       <Label layoutX="496.0" layoutY="49.0" prefHeight="45.0" prefWidth="136.0" text="LibraLink">
          <font>
             <Font name="Ubuntu Condensed" size="38.0" />

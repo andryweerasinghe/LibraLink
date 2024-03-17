@@ -10,4 +10,5 @@ public interface UserDAO extends CrudDAO {
     String generateNewId();
     boolean isValidUser(User entity);
     String getUserId(String name);
+    String getTotalUsers();
 }
